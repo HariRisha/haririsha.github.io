@@ -1,0 +1,63 @@
+body{
+    background-color: black;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    padding: 10px 100px;
+    background-color: rgba(194, 194, 194, 0.522);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first_page{
+    background-image: url('C3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation{
+    font-size: 20px;
+}
+
+.navigation a {
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+.navigation a:hover{
+    background: aquamarine;
+    color: white;
+}
+
+#title{
+    font-family: "Bebas neue", Arial, Verdana;
+    font-size: 30px;
+    color: white;
+}
+
+.main_title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#main_text{
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.second_page{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
