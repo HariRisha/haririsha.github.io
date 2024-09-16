@@ -128,6 +128,7 @@ iframe {
   align-items: center;
   justify-content: center;
   background-color: rgba(194, 194, 194, 0.9);
+  z-index: 1000;
 }
 
 form {
