@@ -10,27 +10,81 @@
 </head>
 
 <body>
-    <section class="first_page">
+    <section class="first_page" id="fst_pg"> 
         <header>
             <h1 id="title">LOST IN THE ARTS CENTER</h1>
             <nav class="navigation">
-                <a href="#">Home</a>
-                <a href="#">Video</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#fst_pg">Home</a>
+                <a href="#scn_pg">Video</a>
+                <a href="#thr_pg">About</a>
+                <a href="#frt_pg">Contact</a>
             </nav>
-        </header>
-    
+        </header>       
         <section class="main_title">
             <h2 id="main_text">LOST IN THE ARTS CENTER</h2>
+            <img src="avatar.png" alt="avatar" id="avatar">
         </section>
     </section>
 
-    <section class="second_page">
-        <h2>2nd page</h2>
+    <section class="second_page" id="scn_pg">
+        <nav class="navigation" id="nav_3">
+            <a href="#fst_pg">Home</a>
+            <a href="#scn_pg">Video</a>
+            <a href="#thr_pg">About</a>
+            <a href="#frt_pg">Contact</a>
+        </nav>
         <iframe id="the_video" width="1200" height="600" src="https://www.youtube.com/embed/5xe2nB326o8?si=Ac5tTLIPkqQkx9dZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
+    <section class="third_page" id="thr_pg">
+        <nav class="navigation" id="nav_2">
+            <a href="#fst_pg">Home</a>
+            <a href="#scn_pg">Video</a>
+            <a href="#thr_pg">About</a>
+            <a href="#frt_pg">Contact</a>
+        </nav>
+        <h1>About us</h1>
+        <br></br>
+        <p>The movie, "Lost in the arts center" was made as a part of the 30 minutes film festival. 
+            It features a common problem all of the students who are attending classes in the arts center have faced which is getting lost in the
+            vast plain of all the rooms of the arts center. 
+        </p>
+        <br></br>
+        <p>The creators of the movie wanted to present the issue with a somewhat satirical movie showing how a girl (one of the creators) is in the
+            end late to the class she came early to. 
+        </p>
+    </section>
+
+    <section class="fourth_page" id="frt_pg">
+    <nav class="navigation" id="nav_3">
+        <a href="#fst_pg">Home</a>
+        <a href="#scn_pg">Video</a>
+        <a href="#thr_pg">About</a>
+        <a href="#frt_pg">Contact</a>
+    </nav>
+    <form>
+        <div>
+            <label>Name:</label>
+            <input type="text" placeholder="Your Name" required>
+        </div>
+
+        <div>
+            <label>Email:</label>
+            <input type="email"placeholder="Your Email" required>
+        </div>
+
+        <div>
+            <label>Message:</label>
+            <textarea placeholder="Your Message" required rows="5"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">
+                Submit
+            </button>
+        </div>
+    </form>
+    </section>
 </body>
 
 
