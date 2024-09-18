@@ -12,7 +12,7 @@ header {
     position: sticky;
     top: 0;
     padding: 10px 100px;
-    background-color: rgba(194, 194, 194, 0.9);
+    background-color: #ea738db3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,21 +39,21 @@ header {
   }
   
 .navigation a:hover {
-    background: aquamarine;
+    background: #89ABE3;
     color: white;
   }
 
 #nav_2{
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: rgba(194, 194, 194, 0.9);
+  justify-content: right;
+  background-color: #ea738db3;
 }
   
 #title {
     font-family: "Bebas neue", Arial, Verdana;
     font-size: 30px;
-    color: white;
+    color: #89ABE3;
   }
   
   .main_title {
@@ -67,7 +67,7 @@ header {
 #main_text {
     position: relative;
     z-index: 2; 
-    color: aliceblue;
+    color: #EA738D;
     font-size: 50px;
 }
 
@@ -103,11 +103,65 @@ iframe {
     z-index: 1;
   }
   
-.third_page {
+  .third_page {
     color: white;
     padding: 50px;
     min-height: 100vh;
-  }
+    display: flex;
+    flex-direction: column;
+}
+
+.content_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+
+.text_content {
+    width: 70%; 
+    padding-right: 20px;
+    text-align: center;
+}
+
+.image_with_description {
+  width: 20%; 
+  text-align: center; 
+}
+
+#haris_photo{
+    width: 100%;
+    max-width: 300px;
+    height: auto; 
+    margin-top: 20px;
+}
+
+.animate-slide{
+  animation: harisSlide 3s forwards;
+  animation: sihyunSlide 3s forwards;
+}
+
+@keyframes harisSlide{
+  from{transform: translateX(-100%);}
+  to{transform: translateX(0%);}
+}
+
+#sihyun_photo{
+  width: 100%;
+  max-width: 300px;
+  height: auto; 
+  margin-top: 20px;
+}
+
+@keyframes sihyunSlide{
+  from{transform: translateX(100%);}
+  to{transform: translateX(0%);}
+}
+
+.image_description{
+  font-size: 20px;
+  color: #89ABE3;
+}
 
 .fourth_page {
   position: relative;
@@ -126,8 +180,8 @@ iframe {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: rgba(194, 194, 194, 0.9);
+  justify-content: right;
+  background-color: #ea738db3;
   z-index: 1000;
 }
 
@@ -145,7 +199,7 @@ label {
   font-size: 18px;
   display: block;
   margin-bottom: 5px;
-  color: aquamarine;
+  color: #EA738D;
 }
 
 input[type="text"],
@@ -153,7 +207,7 @@ input[type="email"],
 textarea {
   width: 90%;
   padding: 15px;
-  border: 2px solid aquamarine;
+  border: 2px solid #89ABE3;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
@@ -162,7 +216,7 @@ textarea {
 }
 
 button[type="submit"] {
-  background-color: aquamarine;
+  background-color: #89ABE3;
   color: black;
   padding: 20px 20px;
   border: none;
@@ -171,3 +225,4 @@ button[type="submit"] {
   font-size: 20px;
   width: 50%;
 }
+
