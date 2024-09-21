@@ -7,7 +7,8 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+
+/*The navigation bar on the first page*/
 header {
     position: sticky;
     top: 0;
@@ -18,7 +19,8 @@ header {
     align-items: center;
     z-index: 1000;
   }
-  
+
+/* The home page of the webiste*/
 .first_page {
     background-image: url('C3.jpg');
     background-repeat: no-repeat;
@@ -43,12 +45,6 @@ header {
     color: white;
   }
 
-#nav_2{
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  background-color: #ea738db3;
-}
   
 #title {
     font-family: "Bebas neue", Arial, Verdana;
@@ -71,6 +67,7 @@ header {
     font-size: 50px;
 }
 
+/*The photo that moves to the side when the user scrolls*/
 #avatar {
     position: absolute; 
     z-index: 1; 
@@ -90,7 +87,9 @@ header {
         opacity: 100%;
     }
 }
+/* The home page of the webiste*/
 
+/* The video page of the website*/
 .second_page {
     position: relative;
     display: flex;
@@ -102,7 +101,9 @@ header {
 iframe {
     z-index: 1;
   }
-  
+/* The video page of the website*/
+
+/* The about us page of the website*/
   .third_page {
     color: white;
     padding: 50px;
@@ -117,6 +118,12 @@ iframe {
     align-items: center; 
 }
 
+#nav_2{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-color: #ea738db3;
+}
 
 .text_content {
     width: 70%; 
@@ -150,8 +157,9 @@ iframe {
 #sihyun_photo{
   width: 300px;
   max-width: 300px;
-  height: auto; 
-  margin-top: 20px;
+  height: auto;
+  margin-top: 120px;
+  margin-bottom: 100px;
 }
 
 @keyframes sihyunSlide{
@@ -162,8 +170,11 @@ iframe {
 .image_description{
   font-size: 20px;
   color: #89ABE3;
+  margin-top: 20px;
 }
+/* The about us page of the website*/
 
+/* The contact us page of the website*/
 .fourth_page {
   position: relative;
   display: flex;
@@ -214,6 +225,7 @@ textarea {
   color: white;
   font-size: 18px;
   margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 button[type="submit"] {
@@ -225,5 +237,6 @@ button[type="submit"] {
   cursor: pointer;
   font-size: 20px;
   width: 50%;
+  font-family: Arial;
 }
-
+/* The contact us page of the website*/
