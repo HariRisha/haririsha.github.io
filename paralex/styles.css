@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    perspective: 1px;
+}
+
+.page1 {
+    position: relative;
+    height: 100vh;
+    background-image: url("sea.jpg");
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.page2 {
+    min-height: 100vh;
+    background-color: lightblue;
+    background-image: url("atlantis.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-end; 
+    position: relative;
+    padding-right: 20px; 
+}
+
+#text1, #text2 {
+    font-size: 100px;
+    text-align: center;
+    padding-top: 10vh;
+    position: relative;
+    z-index: 2;
+}
+
+#boat {
+    position: absolute;
+    bottom: 50%;
+    left: 50%; 
+    z-index: 2;
+    width: 450px; 
+    transition: transform 0.2s ease-out;
+}
+
+#shark {
+    position: absolute;
+    bottom: 10%;
+    left: 20%; 
+    z-index: 1; 
+    width: 400px;
+    transition: transform 0.2s ease-out; 
+}
+
+#atlantis-text {
+    font-size: 25px; 
+    color: white; 
+    opacity: 0; 
+    transform: translateX(50px); 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+    max-width: 500px;
+    text-align: right;
+    padding: 20px; 
+    margin-top: 20px; 
+    z-index: 2;
+}
