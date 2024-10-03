@@ -1,0 +1,21 @@
+/* Make sure the HTML and body take up the full height */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("diner.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#title {
+  position: absolute;
+  top: -260px;
+  left: 50px;
+  width: 75%;
+  height: 75%;
+}
