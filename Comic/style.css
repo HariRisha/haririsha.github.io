@@ -1,9 +1,12 @@
 /* Make sure the HTML and body take up the full height */
-html,
-body {
+html{
   margin: 0;
   padding: 0;
   height: 100vh;
+}
+
+
+body.page1 {
   background-image: url("diner.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -11,11 +14,103 @@ body {
   background-size: cover;
 }
 
+body.page2 {
+  background-image: url('detective_back.PNG');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+body.page3 {
+  background-image: url('pinboard.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.page5 {
+  background-image: url('diner_inside.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+/* Page 1 */
 #title {
   position: absolute;
   top: -260px;
   left: 50px;
   width: 75%;
   height: 75%;
+}
+/* Page 1 */
+
+
+/* Container for note and input */
+#note-container {
+  position: absolute;
+
+  height: 80%; /* Adjust size as needed */
+  width: 80%;
+  z-index: 0;
+}
+
+/* Note image */
+#note {
+  top: 50%;
+  left: 55%;
+  transform: translate( 10%,-10%); /* Center the container */
+  width: 80%;
+  height: 80%;
+  z-index: 0; /* Background image behind the input */
+}
+
+/* Centered input field on top of the note */
+#name {
+  position: absolute;
+  top: 20%;              /* Center it vertically */
+  left: 57%;             /* Center it horizontally */
+  rotate: 3deg;
+  transform: translate(-50%, -50%); /* Adjust to be perfectly centered */
+  
+  z-index: 2;            /* Ensure input is on top of the note */
+  padding: 10px;
+  font-size: 18px;
+  width: 10%;            /* Adjust the width as needed */
+  text-align: center;    /* Center text within the input */
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+}
+
+.suspects {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  z-index: 1;
+}
+
+#barista, #cook, #sus_guy {
+  position: absolute;
+  width: 65%;
+}
+
+#barista {
+  top: 50px;
+  left: 100px;
+}
+
+
+#cook {
+  top: 50px;
+  left: 200px;
+}
+
+
+#sus_guy {
+  top: 50px;
+  left: 300px;
 }

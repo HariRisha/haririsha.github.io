@@ -1,9 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const text = document.querySelector('p'); // Replace 'p' with the actual tag you want to move
+let barista = document.getElementById('barista')
 
-  text.addEventListener('click', () => {
-    text.style.position = 'absolute';
-    text.style.left = `${Math.random() * window.innerWidth}px`;
-    text.style.top = `${Math.random() * window.innerHeight}px`;
-  });
-});
+barista.addEventListener('click', e => {
+  window.alert('The js works!')
+})
