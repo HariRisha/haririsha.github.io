@@ -2,13 +2,16 @@ let barista = document.getElementById('barista')
 let cook = document.getElementById('cook')
 let sus_guy = document.getElementById('sus_guy')
 let det_name_input = document.getElementById('name')
+let choice = document.getElementById('select')
+let find_msg = document.getElementById('find_msg')
 
-det_name_input.addEventListener('keypress', e => {
-  if (e.key == 'Enter') {
-    let det_name = det_name_input.value;
-    window.alert('The name has been saved');
-  }
-})
+// det_name_input.addEventListener('keypress', e => {
+//   if (e.key == 'Enter') {
+//     let det_name = det_name_input.value;
+//     window.alert('The name has been saved');
+//   }
+// })
+
 
 // Barista message
 let br_msg = document.createElement('img')
@@ -47,6 +50,8 @@ barista.addEventListener('click', e => {
     br_msg.style.display = 'block';
     ck_msg.style.display = 'none';
     sus_msg.style.display = 'none';
+    choice.style.display = 'block';
+    find_msg.style.display = 'none';
     br_msg.style.animation = 'reappear 3s forwards';
     br_msg.style.width = '600px';
     br_msg.style.height = 'auto'; 
@@ -68,6 +73,8 @@ cook.addEventListener('click', e => {
     br_msg.style.display = 'none';
     ck_msg.style.display = 'block';
     sus_msg.style.display = 'none';
+    choice.style.display = 'block';
+    find_msg.style.display = 'none';
     ck_msg.style.animation = 'reappear 3s forwards';
     ck_msg.style.width = '600px';
     ck_msg.style.height = 'auto'; 
@@ -90,6 +97,8 @@ sus_guy.addEventListener('click', e => {
     br_msg.style.display = 'none';
     ck_msg.style.display = 'none';
     sus_msg.style.display = 'block';
+    choice.style.display = 'block';
+    find_msg.style.display = 'none';
     sus_msg.style.animation = 'reappear 3s forwards';
     sus_msg.style.width = '600px';
     sus_msg.style.height = 'auto'; 
@@ -99,9 +108,26 @@ sus_guy.addEventListener('click', e => {
   }
 })
 
+choice.addEventListener('click', e => {
+  if (selected_element === 'barista'){
+    e.stopPropagation();
+    window.location.href = 'barista_choice.html';
+  } 
+  else if (selected_element === 'cook'){
+    e.stopPropagation();
+    window.location.href = 'cook_choice.html';
+  }
+  else if (selected_element === 'sus_guy'){
+    e.stopPropagation();
+    window.location.href = 'sus_choice.html';
+  }
+})
+
+
 // Detecting the click on the screen around the suspects
 document.addEventListener('click', e => {
-  if(element_click && !barista.contains(e.target) && !cook.contains(e.target) && !sus_guy.contains(e.target)) {
+  if(element_click && !barista.contains(e.target) && !cook.contains(e.target) && !sus_guy.contains(e.target) 
+    && !choice.contains(e.target)) {
     if (selected_element === 'barista') {
       barista.style.animation = 'moveBaristaBack 2s forwards';
       selected_element = null
@@ -117,15 +143,11 @@ document.addEventListener('click', e => {
       ck_msg.style.display = 'none';
       br_msg.style.display = 'none';
       sus_msg.style.display = 'none';
+      choice.style.display = 'none';
+      find_msg.style.display = 'block';
       element_click = false;
       selected_element = null;
     }
 })
 
 
-// if (det_name_input){
-//   window.alert('wok')
-//   let nameDisplay = document.createElement('p');
-//   let nameContainer = document.querySelector('.nameDisplay');
-//   document.body.appendChild(nameDisplay);
-// }

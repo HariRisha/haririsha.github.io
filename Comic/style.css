@@ -30,6 +30,14 @@ body.page3 {
   background-size: cover;
 }
 
+body.page4 {
+  background-image: url('tiles_background.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
 body.page5 {
   background-image: url('diner_inside.png');
   background-attachment: fixed;
@@ -92,6 +100,31 @@ body.sus_choice {
   z-index: 0;
 }
 
+#dead_body {
+  position: absolute;
+  height: 95%;
+  width: 90%;
+  right: 160px;
+  z-index: 1;
+}
+
+#blood_pool {
+  position: absolute;
+  left: -200px;
+  top: -250px;
+  width: 50%;
+  z-index: 0;
+  opacity: 70%;
+}
+
+#body_note {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  left: 300px;
+  clip-path: inset(100px 390px 0 400px);
+}
+
 /* Centered input field on top of the note */
 #name {
   position: absolute;
@@ -108,6 +141,25 @@ body.sus_choice {
   border: 2px solid #333;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.8); 
+}
+
+#find_msg {
+  position: absolute;
+  top: 10px;
+  width: 50%;
+  height: 50%;
+  clip-path: inset(20px 350px 300px 80px);
+}
+
+#select {
+  position: absolute;
+  top: -200px;
+  right: 100px;
+  width: 70%;
+  height: 60%;
+  clip-path: inset(220px 550px 130px 150px);
+  display: none;
+  z-index: 10;
 }
 
 .suspects {
@@ -179,4 +231,17 @@ body.sus_choice {
     left: -40px;}
   to{top: 50px;
     left: 300px}
+}
+
+
+#invisible-button {
+  position: absolute;
+  bottom: 75px;
+  left: 105px;
+  width: 565px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 9999; /* Ensure it's on top */
 }
