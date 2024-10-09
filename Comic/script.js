@@ -7,7 +7,7 @@ let find_msg = document.getElementById('find_msg')
 
 // Barista message
 let br_msg = document.createElement('img')
-br_msg.src = 'barista_message.PNG'
+br_msg.src = 'barista_message.png'
 br_msg.style.display = 'none';
 
 // Cook message
