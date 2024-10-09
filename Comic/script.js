@@ -5,14 +5,6 @@ let det_name_input = document.getElementById('name')
 let choice = document.getElementById('select')
 let find_msg = document.getElementById('find_msg')
 
-// det_name_input.addEventListener('keypress', e => {
-//   if (e.key == 'Enter') {
-//     let det_name = det_name_input.value;
-//     window.alert('The name has been saved');
-//   }
-// })
-
-
 // Barista message
 let br_msg = document.createElement('img')
 br_msg.src = 'barista_message.PNG'
@@ -108,6 +100,7 @@ sus_guy.addEventListener('click', e => {
   }
 })
 
+// Arrest button
 choice.addEventListener('click', e => {
   if (selected_element === 'barista'){
     e.stopPropagation();

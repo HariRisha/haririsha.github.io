@@ -7,15 +7,106 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="page1">
-    <!-- Left Arrow -->
-    <a href="previous-page.html" class="arrow left">&larr; Previous</a>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Interactive Arrow SVG</title>
 
-    <!-- Right Arrow -->
-    <a href="next-page.html" class="arrow right">Next &rarr;</a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Interactive Arrow SVG</title>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+      <style>
+        html,
+        body {
+          height: 100%;
+          overflow: hidden;
+        }
+
+        button {
+          -webkit-appearance: none;
+          background: transparent;
+          border: 0;
+          outline: 0;
+        }
+
+        svg {
+          padding: 5px;
+        }
+
+        .arrow {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          margin-top: -22px; /* Adjust margin-top to position smaller arrows */
+          margin-left: -20px;
+          width: 40px; /* Smaller width */
+          height: 45px; /* Smaller height */
+        }
+
+        .left {
+          left: 4%; /* Keep positioning the same */
+        }
+
+        .right {
+          left: 96%; /* Keep positioning the same */
+        }
+
+        .left:hover polyline,
+        .left:focus polyline {
+          stroke-width: 8; /* Keep hover stroke width proportional */
+        }
+
+        .left:active polyline {
+          stroke-width: 10;
+          transition: all 100ms ease-in-out;
+        }
+
+        .right:hover polyline,
+        .right:focus polyline {
+          stroke-width: 8; /* Keep hover stroke width proportional */
+        }
+
+        .right:active polyline {
+          stroke-width: 10;
+          transition: all 100ms ease-in-out;
+        }
+
+        polyline {
+          transition: all 250ms ease-in-out;
+          stroke: #FFFFFF; 
+          stroke-width: 6; 
+        }
+
+        .nav-link {
+          display: inline-block;
+        }
+      </style>
+
+    </head>
+
+    <body>
+      <!-- Right arrow link -->
+      <a class="nav-link" href="2.html">
+        <button class="arrow right">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="45px" viewBox="0 0 50 80" xml:space="preserve">
+            <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" points="
+            0.375,0.375 45.63,38.087 0.375,75.8 "/>
+          </svg>
+        </button>
+      </a>
 
   <img src="Title.png" id="title">
-  
+
   <script src="script.js"></script>
+  </script>
 
 </body>
-</html>
+</html> 

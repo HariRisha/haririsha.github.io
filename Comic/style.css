@@ -5,7 +5,7 @@ html{
   height: 100vh;
 }
 
-
+/* Page set ups */
 body.page1 {
   background-image: url("diner.jpg");
   background-attachment: fixed;
@@ -69,6 +69,7 @@ body.sus_choice {
   background-repeat: no-repeat;
   background-size: cover; 
 }
+/* Page set ups */
 
 /* Page 1 */
 #title {
@@ -80,17 +81,32 @@ body.sus_choice {
 }
 /* Page 1 */
 
+/* Page 2 */
+#cpt1 {
+  position: absolute;
+  width: 80%;
+  animation-name: reappear;
+  animation-duration: 3s;
+}
 
-/* Container for note and input */
+#cpt2 {
+  position: absolute;
+  width: 80%;
+  right: -30px;
+  bottom: -80px;
+  animation-name: reappear;
+  animation-duration: 8s;
+}
+/* Page 2 */
+
+/* Page 3 */
 #note-container {
   position: absolute;
-
   height: 80%;
   width: 80%;
   z-index: 0;
 }
 
-/* Note image */
 #note {
   top: 50%;
   left: 55%;
@@ -99,7 +115,9 @@ body.sus_choice {
   height: 80%;
   z-index: 0;
 }
+/* Page 3 */
 
+/* Page 4 */
 #dead_body {
   position: absolute;
   height: 95%;
@@ -124,25 +142,9 @@ body.sus_choice {
   left: 300px;
   clip-path: inset(100px 390px 0 400px);
 }
+/* Page 4 */
 
-/* Centered input field on top of the note */
-#name {
-  position: absolute;
-  top: 20%;
-  left: 57%;
-  rotate: 3deg;
-  transform: translate(-50%, -50%);
-  
-  z-index: 2;            
-  padding: 10px;
-  font-size: 18px;
-  width: 10%;            
-  text-align: center;    
-  border: 2px solid #333;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.8); 
-}
-
+/* Page 5 */
 #find_msg {
   position: absolute;
   top: 10px;
@@ -175,21 +177,21 @@ body.sus_choice {
 }
 
 #barista {
-  top: 50px;
+  top: 70px;
   left: 100px;
   clip-path: inset(100px 640px 0 110px);
 }
 
 
 #cook {
-  top: 50px;
+  top: 70px;
   left: 200px;
   clip-path: inset(250px 320px 0 300px);
 }
 
 
 #sus_guy {
-  top: 50px;
+  top: 70px;
   left: 300px;
   clip-path: inset(50px 20px 0 665px);
 }
@@ -206,34 +208,35 @@ body.sus_choice {
 }
 
 @keyframes moveBaristatoMiddle {
-  from{top: 50px;
+  from{top: 70px;
     left: 100px;}
-  to{top: 50px;
+  to{top: 70px;
     left: 500px}
 }
 
 @keyframes moveSus_GuytoMiddle {
-  from{top: 50px;
+  from{top: 70px;
     left: 300px;}
-  to{top: 50px;
+  to{top: 70px;
     left: -40px}
 }
 
 @keyframes moveBaristaBack {
-  from{top: 50px;
+  from{top: 70px;
     left: 500px;}
-  to{top: 50px;
+  to{top: 70px;
     left: 100px}
 }
 
 @keyframes moveSus_GuyBack {
-  from{top: 50px;
+  from{top: 70px;
     left: -40px;}
-  to{top: 50px;
+  to{top: 70px;
     left: 300px}
 }
+/* Page 5 */
 
-
+/* Final decisions */
 #invisible-button {
   position: absolute;
   bottom: 75px;
@@ -243,62 +246,14 @@ body.sus_choice {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  z-index: 9999; /* Ensure it's on top */
+  z-index: 9999;
 }
 
-button {
-  background: transparent;
-  border: 0;
-  outline: 0;
-}
-
-svg {
-  padding: 5px;
-}
-
-.arrow {
-  cursor: pointer;
+#back-btn {
   position: absolute;
-  top: 50%;
-  margin-top: -45px;
-  margin-left: -35px;
-  width: 70px;
-  height: 90px;
+  width: 60%;
+  top: -450px;
+  left: 50px;
+  z-index: 99;
 }
-
-.left {
-  left: 4%; /* Move the left arrow more to the left */
-}
-
-.right {
-  left: 96%; /* Move the right arrow more to the right */
-}
-
-.left:hover polyline,
-.left:focus polyline {
-  stroke-width: 3;
-}
-
-.left:active polyline {
-  stroke-width: 6;
-  transition: all 100ms ease-in-out;
-}
-
-.right:hover polyline,
-.right:focus polyline {
-  stroke-width: 3;
-}
-
-.right:active polyline {
-  stroke-width: 6;
-  transition: all 100ms ease-in-out;
-}
-
-polyline {
-  transition: all 250ms ease-in-out;
-  stroke: #0000FF; /* Set arrow color to blue */
-}
-
-.nav-link {
-  display: inline-block;
-}
+/* Final decision */
