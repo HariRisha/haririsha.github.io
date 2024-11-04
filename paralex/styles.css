@@ -1,3 +1,4 @@
+/* Base Styles */
 html, body {
     margin: 0;
     padding: 0;
@@ -8,17 +9,19 @@ body {
     perspective: 1px;
 }
 
+/* Page 1 Background */
 .page1 {
     position: relative;
     height: 100vh;
     background-image: url("sea.jpg");
     background-size: cover;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
 }
 
+/* Page 2 Background */
 .page2 {
     min-height: 100vh;
     background-color: lightblue;
@@ -28,12 +31,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: flex-end; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     position: relative;
-    padding-right: 20px; 
+    padding-right: 20px;
 }
 
 #text1, #text2 {
@@ -44,33 +47,75 @@ body {
     z-index: 2;
 }
 
+/* Boat and Shark Styles */
 #boat {
     position: absolute;
     bottom: 50%;
-    left: 50%; 
+    left: 50%;
     z-index: 2;
-    width: 450px; 
+    width: 450px;
     transition: transform 0.2s ease-out;
 }
 
 #shark {
     position: absolute;
     bottom: 10%;
-    left: 20%; 
-    z-index: 1; 
+    left: 20%;
+    z-index: 2;
     width: 400px;
-    transition: transform 0.2s ease-out; 
+    transition: transform 0.2s ease-out;
 }
 
+/* Wave Styles */
+#wave1, #wave2, #wave1-2, #wave2-2, #wave1-3, #wave1-4, #wave2-3, #wave2-4{
+    position: absolute;
+    bottom: 100px;
+    z-index: 1;
+    width: 50%;
+}
+
+#wave1 {
+    left: 10%;
+}
+
+#wave2 {
+    right: 10%;
+}
+
+#wave1-2 {
+    left: 30%;
+}
+
+#wave2-2 {
+    right: 30%;
+}
+
+#wave1-3 {
+    left: 20%;
+}
+
+#wave1-4 {
+    right: 20%;
+}
+
+#wave2-3{
+    left: 40%;
+}
+
+#wave2-4{
+    right: 40%;
+}
+
+/* Atlantis Text */
 #atlantis-text {
-    font-size: 25px; 
-    color: white; 
-    opacity: 0; 
-    transform: translateX(50px); 
-    transition: opacity 0.5s ease, transform 0.5s ease; 
+    font-size: 25px;
+    color: white;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
     max-width: 500px;
     text-align: right;
-    padding: 20px; 
-    margin-top: 20px; 
+    padding: 20px;
+    margin-top: 20px;
     z-index: 2;
 }
