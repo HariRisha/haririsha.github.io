@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1: Panic!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Rock+3D&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NavBar -->
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="#step1">Step 1: Panic!</a></li>
+        <li><a href="#step2">Step 2: Classroom Edition</a></li>
+        <li><a href="#step3">Step 3: Crisis Edition</a></li>
+        <li><a href="#congrats">Congrats!</a></li>
+    </ul>
+</nav>
+<!--STEP 1-->
+    <div class="parallax-panel-1" id = "step1">
+        <div class="content">
+            <h1 class="step-1">PANIC! MORNING EDITION!</h1>
+            <br>
+            <div class="video-container">
+                <video id="Step1" controls>
+                    <source src="videos/Step 1.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="activity">
+        <h3>Make sure you get to class by checking off the following tasks: </h3>
+        <ul class="checklist">
+            <li><input type="checkbox" id="face"> <label for="face">Washed your face</label></li>
+            <li><input type="checkbox" id="coffee"> <label for="coffee">Had coffee</label></li>
+            <li><input type="checkbox" id="bag"> <label for="bag">Got your bag</label></li>
+            <li><input type="checkbox" id="left"> <label for="left">Left</label></li>
+        </ul>
+    </div>
+<!--STEP 2-->
+
+    <div class="parallax-panel-2" id = "step2">
+        <div class="content">
+            <h1 class="step-1">CLASSROOM EDITION!</h1>
+            <br>
+            <div class="video-container">
+                <video id="Step2" controls>
+                    <source src="videos/Step 2.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="activity-2">
+        <h3>Classroom Focus Challenge</h3>
+        <p>Choose the best response for each scenario to appear focused in class:</p>
+    
+        <div class="scenario">
+            <h4>Which one is suggested? </h4>
+            <div class="options">
+                <button onclick="showFeedback('correct')">Nod your head.</button>
+                <button onclick="showFeedback('incorrect')">Look at your phone.</button>
+            </div>
+        </div>
+    
+        <div class="scenario">
+            <h4>Which one is suggested? </h4>
+            <div class="options">
+                <button onclick="showFeedback('correct')">Pretend to take notes on your laptop.</button>
+                <button onclick="showFeedback('incorrect')">Take a nap on your desk.</button>
+            </div>
+        </div>
+    
+        <div class="scenario">
+            <h4> Which one do you NOT do?</h4>
+            <div class="options">
+                <button onclick="showFeedback('correct')">Zone Out and daydream</button>
+                <button onclick="showFeedback('incorrect')">Take notes.</button>
+            </div>
+        </div>
+    
+        <div id="feedback" class="feedback"></div>
+    </div>
+    <!--STEP 3-->    
+    <div class="parallax-panel-3" id = "step3">
+        <div class="content">
+            <h1 class="step-1">CRISIS EDITION!</h1>
+            <br>
+            <div class="video-container">
+                <video id="Step2" controls>
+                    <source src="videos/Step 3.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="activity">
+        <h1 class="step-1" id="congrats">CONGRATS! You made it!</h1>
+    </div>
+</body>
+
+</html>
+<style>
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #2E2B30;
+}
+</style>
+
+<script>
+    function showFeedback(response) {
+    const feedbackDiv = document.getElementById("feedback");
+    
+    if (response === 'correct') {
+        feedbackDiv.innerHTML = "<p style='color: green;'>Great choice!</p>";
+    } else {
+        feedbackDiv.innerHTML = "<p style='color: red;'>Oops! That might make you look distracted. Try again!</p>";
+    }
+}
+</script>
