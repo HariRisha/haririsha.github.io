@@ -13,13 +13,16 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact"> Contact Me</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Photos section -->
     <section id="home">
         <h1>HARIS KOCAN</h1>
-        <p>A short text about the website</p>
+        <p>
+            Interactive Media student, Website developer, Filmmaker and Photographer. Explore my work, starting with the photos I have taken</p>
         <div class="photo-slider">
             <img src="images/photo 1.jpg" alt="Photo 1" class="active">
             <img src="images/photo 2.jpg" alt="Photo 2">
@@ -29,48 +32,86 @@
         </div>
     </section>
 
+    <!-- About me -->
     <section id="about">
         <h2>About Me</h2>
         <div class="about-content">
             <img id="haris" src="images/profile.png" alt="A photo of Haris">
-            <p>Text about my work and me</p>
+            <p>Hi, I'm Haris Kocan, a designer and storyteller passionate about turning ideas into impactful projects. From immersive videos to interactive websites, my work blends technical skills with artistic expression to engage and inspire. Explore my portfolio for a glimpse into my creative journey. Let’s create something extraordinary!</p>
         </div>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>Websites I have created</h2>
         <div class="project-grid">
-            <div class="project">
+            <!-- Websites -->
+            <a href="https://haririsha.github.io/Test/index.html" target="_blank" class="project">
                 <img src="images/Lost in the arts center.png" alt="Screenshot 1">
                 <p>Lost in the arts center</p>
-            </div>
-            <div class="project">
+            </a>
+            <a href="https://haririsha.github.io/Comic/index.html" target="_blank" class="project">
                 <img src="images/Murder on the menu.png" alt="Screenshot 2">
                 <p>Murder on the menu</p>
-            </div>
-            <div class="project">
+            </a>
+            <a href="https://haririsha.github.io/VideoProject/index.html" target="_blank" class="project">
                 <img src="images/Video project.png" alt="Screenshot 3">
-                <p>How to pretend to be a responisble student</p>
-            </div>
-            <div class="project">
+                <p>How to pretend to be a responsible student</p>
+            </a>
+            <a href="https://haririsha.github.io/paralex/index.html" target="_blank" class="project">
                 <img src="images/Paralex.png" alt="Screenshot 4">
                 <p>Dare to dive</p>
+            </a>
+            <a href="https://haririsha.github.io/empathy lab/index.html" target="_blank" class="project">
+                <img src="images/Empathy lab.png" alt="Screenshot 5">
+                <p>Empathy Lab</p>
+            </a>
+        </div>
+    
+        <!-- Videos -->
+        <h3>Video Projects I have worked on</h3>
+        <div class="video-grid">
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/8gybR6GaPqs?si=MVterrJVzVwEwwI2" 
+                            title="The Forgotten Duchess of the Adriatic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                            encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+                <p>The Forgotten Duchess of the Adriatic</p>
             </div>
-            <div class="project-grid">
-                <div class="project">
-                    <img src="images/Empathy lab.png" alt="Screenshot 5">
-                    <p>Empathy Lab</p>
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/Ou21VwcOm3M?si=4bS4NH-ClCW9p2zs" 
+                            title="YouTube video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                            encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+                <p>School Promotional Video</p>
+            </div>
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/kkbCPQSto_g?si=zsLPfJEBi-2VhGjF" 
+                            title="YouTube video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                            encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+                <p>Hometown promotional video</p>
             </div>
         </div>
-        <!-- <div class="video-projects">
-            <h3>Video Projects I Worked On</h3>
-            <video controls>
-                <source src="video1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            Add more videos if needed 
-        </div> -->
     </section>
+    
+    <!-- Contact me  -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd love to hear from you! Whether it's about a project, collaboration, or just a hello, feel free to reach out.</p>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
 
     <footer>
         <p>&copy; 2024 Haris Kocan</p>
